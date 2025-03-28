@@ -1,8 +1,40 @@
 #MCP (Model Context Protocol)
 
-[Home Page] https://docs.anthropic.com/en/docs/agents-and-tools/mcp
-
-
 [Introduction] https://modelcontextprotocol.io/introduction
 
-...to be continue
+[For Server Developer] https://modelcontextprotocol.io/quickstart/server
+
+[For Client Developer] https://modelcontextprotocol.io/quickstart/client
+
+[For Claude Desktop User] https://modelcontextprotocol.io/quickstart/user
+
+# Example
+[Example Server] https://modelcontextprotocol.io/examples
+
+[Example Client] https://modelcontextprotocol.io/clients
+
+[Building MCP with LLM] https://modelcontextprotocol.io/tutorials/building-mcp-with-llms
+
+# Debugging
+
+[Debugging] https://modelcontextprotocol.io/docs/tools/debugging
+
+[Inspector] https://modelcontextprotocol.io/docs/tools/inspector
+
+# Architecture 
+[Core Architecture] https://modelcontextprotocol.io/docs/concepts/architecture
+
+# Resources
+[Resources] https://modelcontextprotocol.io/docs/concepts/resources
+
+# Prompts 
+[Prompts] https://modelcontextprotocol.io/docs/concepts/prompts
+
+# Tools
+[Tools] https://modelcontextprotocol.io/docs/concepts/tools
+
+# Sampling
+[Sampling] https://modelcontextprotocol.io/docs/concepts/sampling
+
+# Transport
+[Transport] https://modelcontextprotocol.io/docs/concepts/transports
