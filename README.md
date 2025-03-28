@@ -62,17 +62,22 @@ uvx --from mcpdoc mcpdoc \
 
 #### Cursor
 
-Add to `~/.cursor/mcp.json`:
+Add to `~/.cursor/mcp.json`
 
 ```json
 {
   "mcpServers": {
     "mcp-doc": {
-      "command": "mcpdoc",
+      "command": "uvx",
       "args": [
+        "--from",
+        "mcpdoc",
+        "mcpdoc",
         "--urls",
         "LangGraph:https://raw.githubusercontent.com/esakrissa/mcp-doc/main/docs/langgraph.txt",
         "ModelContextProtocol:https://raw.githubusercontent.com/esakrissa/mcp-doc/main/docs/mcp.txt",
+        "--allowed-domains",
+        "*",
         "--transport",
         "stdio"
       ]
@@ -81,9 +86,10 @@ Add to `~/.cursor/mcp.json`:
 }
 ```
 
-Add to Cursor User Rules:
+Then add these instructions to Cursor's Custom Instructions:
 
 ```
+<custom_instructions>
 for ANY question about LangGraph and Model Context Protocol (MCP), use the mcp-doc server to help answer -- 
 + call list_doc_sources tool to get the available documentation files
 + call fetch_docs tool to read the langgraph.txt or mcp.txt file
@@ -91,7 +97,10 @@ for ANY question about LangGraph and Model Context Protocol (MCP), use the mcp-d
 + reflect on the input question 
 + call fetch_docs on any urls relevant to the question
 + use this to answer the question
+</custom_instructions>
 ```
+
+To test if the integration is working, ask Cursor a question about LangGraph or MCP, and check if it uses the documentation server tools to fetch information.
 
 ## Security Note
 
@@ -103,3 +112,4 @@ For security reasons, strict domain access controls are implemented:
 ## References
 
 This project is based on the original [mcpdoc by LangChain AI](https://github.com/langchain-ai/mcpdoc), modified to provide focused documentation access for LangGraph and MCP. 
+
