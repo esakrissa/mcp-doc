@@ -89,7 +89,6 @@ Add to `~/.cursor/mcp.json`
 Then add these instructions to Cursor's Custom Instructions:
 
 ```
-<custom_instructions>
 for ANY question about LangGraph and Model Context Protocol (MCP), use the mcp-doc server to help answer -- 
 + call list_doc_sources tool to get the available documentation files
 + call fetch_docs tool to read the langgraph.txt or mcp.txt file
@@ -97,7 +96,6 @@ for ANY question about LangGraph and Model Context Protocol (MCP), use the mcp-d
 + reflect on the input question 
 + call fetch_docs on any urls relevant to the question
 + use this to answer the question
-</custom_instructions>
 ```
 
 To test if the integration is working, ask Cursor a question about LangGraph or MCP, and check if it uses the documentation server tools to fetch information.
