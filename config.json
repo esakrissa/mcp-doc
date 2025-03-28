@@ -1,0 +1,10 @@
+[
+  {
+    "name": "LangGraph",
+    "doc_file": "https://raw.githubusercontent.com/esakrissa/mcp-doc/main/docs/langgraph.txt"
+  },
+  {
+    "name": "ModelContextProtocol",
+    "doc_file": "https://raw.githubusercontent.com/esakrissa/mcp-doc/main/docs/mcp.txt"
+  }
+] 
