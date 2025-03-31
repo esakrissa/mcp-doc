@@ -201,3 +201,6 @@
 [How to visualize your graph](https://langchain-ai.github.io/langgraph/how-tos/visualization): LLM should read this page when needing to visualize LangGraph graphs, looking for graph visualization methods, or working with graph visualization in Python. Comprehensive guide for visualizing graphs in LangGraph with multiple methods: Mermaid syntax, Mermaid.ink API for PNG rendering, Pyppeteer-based visualization, and Graphviz, with customization options for colors, styles, and layout.
 
 [How to wait for user input (Functional API)](https://langchain-ai.github.io/langgraph/how-tos/wait-user-input-functional/): LLM should read this page when implementing human-in-the-loop workflows, integrating user input into agent systems, or adding interruption capabilities to LangGraph applications. The page explains how to use the `interrupt()` function in LangGraph's Functional API to pause execution for human input, with examples for both simple workflows and ReAct agents, including code implementations with checkpointing.
+
+# LangChain MCP Adapters
+[LangChain MCP Adapters] https://github.com/langchain-ai/langchain-mcp-adapters : This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph.
