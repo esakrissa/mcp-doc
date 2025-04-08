@@ -1,4 +1,5 @@
 # MCP Documentation Server
+[![smithery badge](https://smithery.ai/badge/@esakrissa/mcp-doc)](https://smithery.ai/server/@esakrissa/mcp-doc)
 
 A customized version of the MCP documentation server that enables integration between LLM applications (like Cursor, Claude Desktop, Windsurf) and documentation sources via the Model Context Protocol.
 
@@ -18,6 +19,15 @@ Currently set up for:
 
 ### Setup and Run
 
+#### Installing via Smithery
+
+To install Documentation Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@esakrissa/mcp-doc):
+
+```bash
+npx -y @smithery/cli install @esakrissa/mcp-doc --client claude
+```
+
+#### Manual Installation
 ```bash
 # Clone the repository
 git clone https://github.com/esakrissa/mcp-doc.git
@@ -110,4 +120,3 @@ For security reasons, strict domain access controls are implemented:
 ## References
 
 This project is based on the original [mcpdoc by LangChain AI](https://github.com/langchain-ai/mcpdoc), modified to provide focused documentation access for LangGraph and MCP. 
-
