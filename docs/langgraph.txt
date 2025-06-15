@@ -206,3 +206,9 @@
 
 # LangChain MCP Adapters
 [LangChain MCP Adapters] https://github.com/langchain-ai/langchain-mcp-adapters : This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph.
+
+# Human-In-the-Loop (HIL)
+[Human-in-the-loop] (https://langchain-ai.github.io/langgraph/agents/human-in-the-loop/): To review, edit and approve tool calls in an agent you can use LangGraph's built-in Human-In-the-Loop (HIL) features, specifically the interrupt() primitive.
+[Overview human-in-the-loop] (https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/): LangGraph supports robust human-in-the-loop (HIL) workflows, enabling human intervention at any point in an automated process.
+[Add human-in-the-loop] (https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/add-human-in-the-loop/): The interrupt function in LangGraph enables human-in-the-loop workflows by pausing the graph at a specific node, presenting information to a human, and resuming the graph with their input. It's useful for tasks like approvals, edits, or gathering additional context.
+[Making it easier to build human-in-the-loop agents with interrupt] (https://blog.langchain.dev/making-it-easier-to-build-human-in-the-loop-agents-with-interrupt/): One of the differentiating aspects of LangGraph is that we built it for human-in-the-loop workflows.
